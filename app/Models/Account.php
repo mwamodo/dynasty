@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Account extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'has_overdraft' => 'boolean',
+    ];
 }
